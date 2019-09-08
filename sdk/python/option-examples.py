@@ -1,8 +1,8 @@
 import logging
 import time
 
-from bhex.client import BhexOptionClient
-from bhex.exceptions import BhexRequestException, BhexAPIException
+from boboo.client import BobooOptionClient
+from boboo.exceptions import BobooRequestException, BobooAPIException
 
 if __name__ == '__main__':
 
@@ -11,7 +11,7 @@ if __name__ == '__main__':
         "https": "",
     }
 
-    b = BhexOptionClient(api_key='', secret='', proxies=proxies)
+    b = BobooOptionClient(api_key='', secret='', proxies=proxies)
 
     try:
 
@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
         print(b.stream_close(listen_key.get('listenKey')))
 
-    except BhexRequestException as bre:
+    except BobooRequestException as bre:
         logging.error(bre)
-    except BhexAPIException as bae:
+    except BobooAPIException as bae:
         logging.error(bae)

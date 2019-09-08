@@ -1,13 +1,13 @@
-Welcome to Bhex-Python
+Welcome to Boboo-Python
 ======================
 
-An official Python implementation of the lastest Open API for Bhex.
+An official Python implementation of the lastest Open API for Boboo.
 
 Install
 -------
 
 ```bash
-pip install bhex
+pip install boboo
 ```
 
 Usage
@@ -15,9 +15,9 @@ Usage
 
 #### REST API
 
-Init bhex client:
+Init boboo client:
 ```python
-b = BhexClient(api_key='', secret='')
+b = BobooClient(api_key='', secret='')
 ```
 
 Request with proxies:
@@ -28,16 +28,16 @@ proxies = {
   "https": "http://ip:port",
 }
 
-b = BhexClient(api_key='', secret='', proxies=proxies)
+b = BobooClient(api_key='', secret='', proxies=proxies)
 ```
 
 #### Web Socket
 
 ##### Init
 
-Init bhex websocket client:
+Init boboo websocket client:
 ```python
-client = BhexWss(api_key='', secret='')
+client = BobooWss(api_key='', secret='')
 ```
 
 ##### Subscribe

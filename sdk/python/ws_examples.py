@@ -1,11 +1,11 @@
-from bhex.websockets import BhexWss
+from boboo.websockets import BobooWss
 
 
 def handler(msg):
     print(msg)
 
 
-client = BhexWss(api_key='', secret='')
+client = BobooWss(api_key='', secret='')
 
 client.subscribe_to_realtimes(symbol='BTCUSDT,ETHUSDT', callback=handler)
 

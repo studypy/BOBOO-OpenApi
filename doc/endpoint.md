@@ -2,12 +2,12 @@
 
 ## Base Domain
 
-bhex.com
+boboo.com
 
 ## API Endpoint ($HOST)
 
 | Name               | base endpoint                                    |
 | ------------------ | ------------------------------------------------ |
-| rest-api           | **[https://api.bhex.com](https://api.bhex.com)** |
-| web-socket-streams | **[wss://wsapi.bhex.com](wss://wsapi.bhex.com)** |
-| user-data-stream   | **[wss://wsapi.bhex.com](wss://wsapi.bhex.com)** |
+| rest-api           | **[https://api.boboo.com](https://api.boboo.com)** |
+| web-socket-streams | **[wss://wsapi.boboo.com](wss://wsapi.boboo.com)** |
+| user-data-stream   | **[wss://wsapi.boboo.com](wss://wsapi.boboo.com)** |
