@@ -18,10 +18,10 @@ import static io.boboo.api.client.impl.BobooApiServiceGenerator.executeSync;
  */
 public class BobooApiRestClientImpl implements BobooApiRestClient {
 
-    private final BobooApiService BobooApiService;
+    private final BobooApiService boBooApiService;
 
     public BobooApiRestClientImpl(String baseUrl, String apiKey, String secret) {
-        BobooApiService = createService(baseUrl, BobooApiService.class, apiKey, secret);
+        boBooApiService = createService(baseUrl, BobooApiService.class, apiKey, secret);
     }
 
     // General endpoints
